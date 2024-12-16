@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import { quiz } from "../Data/QuestionSet";
 import ScoreCard from "./ScoreCard";
-import { QuizProps, QuizResult, Question } from "../Interfaces/quiz-app"
+import { QuizProps, QuizResult } from "../Interfaces/quiz-app"
+// import { QuizProps, QuizResult, Question } from "../Interfaces/quiz-app"
 
 const Quiz: React.FC<QuizProps> = ({ name }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
