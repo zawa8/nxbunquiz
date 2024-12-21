@@ -3,44 +3,50 @@ import { Quiz } from '../Interfaces/quiz-app';
 export const quiz: Quiz = {
     questions: [
         {
+            id: 6,
+            question: 'DevAnagAri lipi ka vikas kis lipi se mana zaTa Hei ?',
+            answers: [ 'romAn', 'farsi', 'braHmi', 'khrosthi', ],
+            correctAnswer: 'braHmi',
+        },
+        {
             id: 1,
-            question: 'What does API stand for?',
+            question: 'what does Api stAnd for?',
             answers: [
-                'Application Programming Interface',
-                'Advanced Programming Interface',
-                'Application Program Interface',
-                'Automated Programming Interface',
+                'ApplicAtion programmiNg interfAce',
+                'Advanced programmiNg interfAce',
+                'ApplicAtion program interfAce',
+                'AutomAted programmiNg interfAce',
             ],
-            correctAnswer: 'Application Programming Interface',
+            correctAnswer: 'ApplicAtion programmiNg interfAce',
         },
         {
             id: 3,
-            question: `Which programming language is often
+            question: `which programmiNg lANguAge is often
                        used for building web servers?`,
-            answers: ['Java', 'Python', 'JavaScript', 'C#'],
-            correctAnswer: 'JavaScript',
+            answers: ['java', 'python', 'javascript', 'c#'],
+            correctAnswer: 'javascript',
         },
         {
             id: 4,
-            question: 'What is the purpose of SQL?',
+            question: 'what is the purpose of sql?',
             answers: [
-                'Styling web pages',
-                'Querying databases',
-                'Creating animations',
-                'Developing mobile apps',
+                'styliNg web pAges',
+                'queryiNg databAses',
+                'creAtiNg AnimAtions',
+                'developiNg mobile Apps',
             ],
-            correctAnswer: 'Querying databases',
+            correctAnswer: 'queryiNg dAtabAses',
         },
         {
             id: 5,
-            question: 'What does MVC stand for in web development?',
+            question: 'vhat does mvc stAnd for in web development?',
             answers: [
-                'Model View Controller',
-                'Model Visual Controller',
-                'Model View Component',
-                'Model Visual Component',
+                'model view controller',
+                'model visual controller',
+                'model view component',
+                'model visual component',
             ],
-            correctAnswer: 'Model View Controller',
+            correctAnswer: 'model view controller',
         },
     ],
 };
