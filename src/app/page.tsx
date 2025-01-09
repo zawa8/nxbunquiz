@@ -2,7 +2,7 @@
 "use client";
 import { useState, ChangeEvent } from "react";
 import Quiz from "./Components/Quiz";
-import FontPicker from "./Components/FontPicker"
+import FontPicker from "./Components/lifonts/lifonts"
 export default function Home() {
   // Using `useState` hooks with appropriate types
   const [quizStarted, setQuizStarted] = useState<boolean>(false);
