@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 
 export const eng115_font = localFont({ src: "./fonts/eng115.woff2", display: "swap", });
 export const ing115_font = localFont({ src: "./fonts/ing115.woff2", display: "swap", });
+export const hingl115_font = localFont({ src: "./fonts/hingl115.woff2", display: "swap", });
+export const hingu115_font = localFont({ src: "./fonts/hingu115.woff2", display: "swap", });
 export const seg115_font = localFont({ src: "./fonts/seg115.woff2", display: "swap", });
 export const hin115_font = localFont({ src: "./fonts/hin115.woff2", display: "swap", });
 export const bangla115_font = localFont({ src: "./fonts/bangla115.woff2", display: "swap", });
@@ -25,9 +27,9 @@ const FontPicker: React.FC = () => {
     document.body.className = "";
     const v_to_f = (sval: string): string => {
       switch (sval) {
-        case "0": return binaryvertical115_font.className;
+        case "0": return hingu115_font.className;
         case "1": return hin115_font.className;
-        case "2": return seg115_font.className;
+        case "2": return hingl115_font.className;
         case "3": return ing115_font.className;
         case "4": return sinhala115_font.className;
         case "5": return korean115_font.className;
@@ -42,6 +44,8 @@ const FontPicker: React.FC = () => {
         case "E": return guzrati115_font.className;
         case "F": return eng115_font.className;
         case "10": return hscii115_font.className;
+        case "11": return seg115_font.className;
+        case "12": return binaryvertical115_font.className;
         default: return seg115_font.className;
       }
     };
@@ -54,9 +58,9 @@ const FontPicker: React.FC = () => {
       onChange={handlevaluechange}
       className="select text-zinc-50 italic font-bold bg-black mx-4 w-1/4"
     >
-      <option value="0">0_binary(89LJBWEF 10=vnti=8+8)</option>
+      <option value="0">0_HiNgu115_font</option>
       <option value="1">1_Hin115_font</option>
-      <option value="2">2_7seglcd</option>
+      <option value="2">2_HiNgl115_font</option>
       <option value="3">3_iNg31:a-z+ADHTN</option>
       <option value="4">4_sinHalA115_font</option>
       <option value="5">4_korean115_font</option>
@@ -71,6 +75,8 @@ const FontPicker: React.FC = () => {
       <option value="E">E_guzrATi115_font</option>
       <option value="F">F_Eng52:a-zA-Z</option>
       <option value="10">10_Hscii115_font</option>
+      <option value="11">11_7seglcd</option>
+      <option value="12">12_binary(89LJBWEF 10=vnti=8+8)</option>
     </select>
   );
 };
