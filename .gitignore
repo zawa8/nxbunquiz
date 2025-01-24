@@ -3,6 +3,8 @@ node_modules
 .next
 ai_help
 /ai_help/
+/del/
+del/
 ################
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
