@@ -17,7 +17,7 @@ export default function Home() {
     <div className="container mx-auto mt-10">
       <div className="text-center">
         <h1 className="text-green-600 text-3xl font-bold mb-4"> multiple choice questions </h1>
-        <h3 className="text-xl mb-6"> quiz App </h3>
+        <h3 className="text-xl mb-6"> quiz app </h3>
         <FontPicker/>
       </div>
       {quizStarted ? ( <Quiz name={name} /> ) : (
@@ -41,7 +41,7 @@ export default function Home() {
             className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200"
             // Disable button if name is empty or contains only whitespace
             disabled={!name.trim()}>
-            Start Quiz
+            stArt multiple choice kuestion kyuiz
           </button>
         </>
       )}
